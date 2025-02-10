@@ -4,13 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Price Binance</title>
+    <title>Crypto portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Goblin+One&family=Montserrat&family=Rowdies:wght@300;400;700&display=swap&_v=20250130214449"
+        href="https://fonts.googleapis.com/css2?family=Goblin+One&family=Montserrat&family=Rowdies:wght@300;400;700&display=swap&_v=20250210190115"
         rel="stylesheet">
-    <link rel="stylesheet" href="./styles/style.min.css?_v=20250130214449">
+    <link rel="stylesheet" href="./styles/style.min.css?_v=20250210190115">
 </head>
 
 <body>
@@ -78,13 +78,16 @@
                                 $4,616.59
                             </div>
                             <div class="portfolio__subtitle">
-                                <div class="portfolio__total-profit green">
+                                <div class="portfolio__total-profit">
                                     +$2,342.67
                                 </div>
-                                <div class="portfolio__period green">
+                                <div class="portfolio__total-percent">
+                                    +20.45%
+                                </div>
+                                <div class="portfolio__period">
                                     <select name="period" id="">
-                                        <option value="24h" selected>(24 ч)</option>
-                                        <option value="all-time">(Всего)</option>
+                                        <option value="24h">(24 ч)</option>
+                                        <option value="all-time" selected>(Всего)</option>
                                     </select>
                                 </div>
                             </div>
@@ -155,19 +158,19 @@
             </div>
             <img src="" alt="" class="title-item__img">
         </div>
-        <div class="table__title-item">
+        <div class="table__title-item table__title-item--min">
             <div class="title-item__name">
                 1h%
             </div>
             <img src="" alt="" class="title-item__img">
         </div>
-        <div class="table__title-item">
+        <div class="table__title-item table__title-item--min">
             <div class="title-item__name">
                 24h%
             </div>
             <img src="" alt="" class="title-item__img">
         </div>
-        <div class="table__title-item">
+        <div class="table__title-item table__title-item--min">
             <div class="title-item__name">
                 7d%
             </div>
@@ -191,13 +194,13 @@
             </div>
             <img src="" alt="" class="title-item__img">
         </div>
-        <div class="table__title-item">
+        <div class="table__title-item table__title-item--min">
             <div class="title-item__name">
                 Alloc, %
             </div>
             <img src="" alt="" class="title-item__img">
         </div>
-        <div class="table__title-item">
+        <div class="table__title-item table__title-item--min">
             <div class="title-item__name">
                 Actions
             </div>
@@ -216,23 +219,23 @@
         </a>
     </div>
     <div class="item__column price-item">
-        $102,011.75
+        $4,121,011.75
     </div>
-    <div class="item__column change-item green">
+    <div class="item__column change-item">
         <img src="img/icons/arrow.svg" alt="" class="change-item__svg">
-        0.10%
+        -34.10%
     </div>
-    <div class="item__column change-item green">
+    <div class="item__column change-item">
         <img src="img/icons/arrow.svg" alt="" class="change-item__svg">
         2.14%
     </div>
-    <div class="item__column change-item green">
+    <div class="item__column change-item">
         <img src="img/icons/arrow.svg" alt="" class="change-item__svg">
         3.45%
     </div>
     <div class="item__column assets-item">
         <div class="assets-item__total">
-            $4,616.59
+            $444,616.59
         </div>
         <div class="assets-item__token">
             <div class="assets-item__count-token">
@@ -243,21 +246,21 @@
             </div>
         </div>
     </div>
-    <div class="item__column assets-item assets-profit green">
+    <div class="item__column assets-item assets-profit">
         <div class="assets-item__profit ">
             <div class="assets-item__total-profit">
-                +$2,161.66
+                +$482,161.66
             </div>
             <div class="assets-item__percent-profit">
                 <img src="img/icons/arrow.svg" alt="" class="assets-item__svg change-item__svg">
-                88.05%
+                1,488.05%
             </div>
         </div>
     </div>
     <div class="item__column assets-item">
         <div class="assets-item__average">
             <div class="assets-item__average-price">
-                $54,245.98
+                $454,245.98
             </div>
             <div class="assets-item__total-invested">
                 $2,455.17
@@ -298,25 +301,20 @@
         <div class="operation__sell">Sell</div>
     </div>
     <div class="token-form__select-token select-token">
-        <input list="crypto-list" class="select-token__input" name="select-token" placeholder="Choose token">
-        <datalist id="crypto-list">
-            <option value="Bitcoin BTC"></option>
-            <option value="ETH"></option>
-            <option value="SOL"></option>
-            <option value="XRP"></option>
-        </datalist>
+        <input list="crypto-list" class="select-token__input" name="select-token" placeholder="Enter token name"
+            autocomplete="off">
     </div>
     <div class="token-form__content">
         <div class="token-form__count-token count-token">
             <label for="count-token">
                 Count token
-                <input class="token-form__input count-token__inp" name="count-token" type="number">
+                <input class="token-form__input count-token__inp" name="count-token" type="text" autocomplete="off">
             </label>
         </div>
         <div class="token-form__price-token price-token">
             <label for="price-token">
                 Price token
-                <input class="token-form__input price-token__inp" name="price-token" type="number">
+                <input class="token-form__input price-token__inp" name="price-token" type="number" autocomplete="off">
             </label>
         </div>
         <div class="token-form__date-transaction date-transaction">
@@ -328,7 +326,7 @@
         <div class="token-form__total-transaction total-transaction">
             <div class="total-transaction__title">Total, $</div>
             <div class="total-transaction__subtitle">
-                $ <span class="total-transaction__subtitle-count">65.87</span>
+                $ <span class="total-transaction__subtitle-count">0</span>
             </div>
 
         </div>
@@ -364,7 +362,7 @@
         </div>
     </div>
 </div>
-    <script src="scripts/app.min.js?_v=20250130214449"></script>
+    <script src="scripts/app.min.js?_v=20250210190115"></script>
 </body>
 
 </html>
